@@ -1,0 +1,133 @@
+:root{
+    --tamanho-svg: 40px;
+    --cor-button: white;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all{
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2e2d;
+}
+
+.esquerda{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.esquerda button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--tamanho-svg);
+    width: var(--tamanho-svg);
+    background-color: gray;
+    border-radius: 50%;
+    border: none;
+    
+}
+.esquerda button svg{
+    width: 15px;
+    height: 15px;
+    fill: var(--cor-button);
+}
+
+.direita{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--tamanho-svg);
+    width: var(--tamanho-svg);
+    background-color: gray;
+    border-radius: 50%;
+    border: none;
+}
+.msg svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--cor-button);
+}
+
+.sino svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--cor-button);
+}
+
+.sino{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--tamanho-svg);
+    width: var(--tamanho-svg);
+    background-color: gray;
+    border-radius: 50%;
+    border: none;
+}
+
+.direita button span{
+    font-size: medium;
+    position: absolute;
+    color: var(--cor-button);
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: red;
+    width: 25px;
+    top: -10px;
+    right: -10px;
+}
+
+.esquerda h2{
+    padding-left: 15px;
+    width: fit-content;
+    color:var(--cor-button);
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--tamanho-svg);
+    width: var(--tamanho-svg);
+    background-color: gray;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+}
+
+.img svg{
+    position: absolute;
+    width: 10px;
+    fill: white;
+    border: 1px solid;
+    border-radius: 50%;
+    bottom: -3px;
+    right: -3px;    
+    z-index: 1;
+    background-color: gray;
+    padding: 2px;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+    clip-path: circle();
+}
